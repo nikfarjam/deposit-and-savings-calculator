@@ -39,6 +39,10 @@ internal class DepositTermCalculatorTest {
             Arguments.of(Investment(10000.0, 0.011, 36, PaymentType.Quarterly), Saving(0.011, 10335.0)),
             Arguments.of(Investment(10000.0, 0.011, 36, PaymentType.Annually), Saving(0.011, 10334.0)),
             Arguments.of(Investment(10000.0, 0.011, 36, PaymentType.AtMaturity), Saving(0.011, 10330.0)),
+
+            Arguments.of(Investment(25000.0, 0.009, 36, PaymentType.AtMaturity), Saving(0.009, 25675.0)),
+            Arguments.of(Investment(25000.0, 0.009, 36, PaymentType.Monthly), Saving(0.009, 25684.0)),
+            Arguments.of(Investment(25000.0, 0.009, 36, PaymentType.Annually), Saving(0.009, 25681.0)),
         )
     }
 }
