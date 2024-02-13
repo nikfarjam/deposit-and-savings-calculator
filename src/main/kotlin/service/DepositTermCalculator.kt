@@ -5,7 +5,6 @@ import com.mehdi.model.Saving
 
 class DepositTermCalculator : InterestCalculator {
     override fun calculate(investment: Investment): Saving {
-        TODO("Not yet implemented")
-        return Saving(0.0, 0.0)
+        return Saving(investment.interestRate, 0.0)
     }
 }
