@@ -8,7 +8,7 @@ class Reporter(private val generators: List<ReportGenerator>) {
     fun showResult(saving: Saving): List<String> {
         val messages = mutableListOf<String>()
 
-        for(reportGenerator in generators) {
+        for (reportGenerator in generators) {
             try {
                 reportGenerator.init()
                 reportGenerator.writeHeader(saving)
