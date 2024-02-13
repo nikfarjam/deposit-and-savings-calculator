@@ -18,7 +18,7 @@ class DepositTermCalculator : InterestCalculator {
      * •  F is the final balance
      * •  P is the start deposit amount
      * •  r is the interest rate p.a
-     * •  t is the investment term in years
+     * •  t is the investment term in months
      */
     override fun calculate(investment: Investment): Saving {
         val finalBalance: Double = when (investment.paymentType) {

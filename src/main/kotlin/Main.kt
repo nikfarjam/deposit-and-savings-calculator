@@ -2,7 +2,6 @@ package com.mehdi
 
 import com.mehdi.error.CalculatorException
 import com.mehdi.model.Investment
-import com.mehdi.model.PaymentType
 import com.mehdi.service.ConsoleReportGenerator
 import com.mehdi.service.DepositTermCalculator
 import com.mehdi.service.ReportGenerator
